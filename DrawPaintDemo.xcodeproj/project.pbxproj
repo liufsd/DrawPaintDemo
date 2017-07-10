@@ -12,6 +12,8 @@
 		06FE6E881F137B3200E76193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06FE6E861F137B3200E76193 /* Main.storyboard */; };
 		06FE6E8A1F137B3200E76193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FE6E891F137B3200E76193 /* Assets.xcassets */; };
 		06FE6E8D1F137B3200E76193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06FE6E8B1F137B3200E76193 /* LaunchScreen.storyboard */; };
+		06FE6E961F137B7F00E76193 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 06FE6E951F137B7C00E76193 /* Shaders.metal */; };
+		06FE6E981F137BD500E76193 /* MercurialPaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FE6E971F137BD500E76193 /* MercurialPaint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		06FE6E891F137B3200E76193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06FE6E8C1F137B3200E76193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06FE6E8E1F137B3200E76193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FE6E951F137B7C00E76193 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		06FE6E971F137BD500E76193 /* MercurialPaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercurialPaint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		06FE6E811F137B3200E76193 /* DrawPaintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				06FE6E941F137B7C00E76193 /* shaders */,
 				06FE6E821F137B3200E76193 /* AppDelegate.swift */,
 				06FE6E841F137B3200E76193 /* ViewController.swift */,
 				06FE6E861F137B3200E76193 /* Main.storyboard */,
 				06FE6E891F137B3200E76193 /* Assets.xcassets */,
 				06FE6E8B1F137B3200E76193 /* LaunchScreen.storyboard */,
 				06FE6E8E1F137B3200E76193 /* Info.plist */,
+				06FE6E971F137BD500E76193 /* MercurialPaint.swift */,
 			);
 			path = DrawPaintDemo;
+			sourceTree = "<group>";
+		};
+		06FE6E941F137B7C00E76193 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				06FE6E951F137B7C00E76193 /* Shaders.metal */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FE6E961F137B7F00E76193 /* Shaders.metal in Sources */,
 				06FE6E851F137B3200E76193 /* ViewController.swift in Sources */,
 				06FE6E831F137B3200E76193 /* AppDelegate.swift in Sources */,
+				06FE6E981F137BD500E76193 /* MercurialPaint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
